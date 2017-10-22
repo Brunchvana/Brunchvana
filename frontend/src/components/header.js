@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../logo.jpg'
 
-export default () => (
-  <header className='tc pv4 pv5-ns'>
-    <img src={logo} className='br-100 pa1 ba b--black-10 h3 w3' alt='avatar' />
-    <h1 className='f5 f4-ns fw6 mid-gray'>Jasper Whitehouse</h1>
-    <h2 className='f6 gray fw2 ttu tracked'>Los Angeles</h2>
-  </header>
-)
+export default class Header extends Component {
+  render() {
+    return (
+      <nav class="pa3 pa4-ns">
+        <a class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns" href="/" title="Home">BRUNCHvana</a>
+        <div class="tc pb3">
+          <a class="link dim gray f6 f5-ns dib mr3" href="/" title="Home">Home</a>
+          <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Events">Events</a>
+          <a class="link dim gray f6 f5-ns dib mr3" href="#" title="">Login</a>
+          <a class="link dim gray f6 f5-ns dib" href="#" title="Contact"></a>
+        </div>
+      </nav>
+    );
+  }
+}
