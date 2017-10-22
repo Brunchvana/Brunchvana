@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import header from './header';
-import home from './home';
-import footer from './footer';
-
+import Header from './Header';
+import Home from './Home';
+import Footer from './Footer';
 
 export default class BaseLayout extends Component {
   constructor(props) {
@@ -12,10 +11,9 @@ export default class BaseLayout extends Component {
     return (
 
       <div>
-        <header />
+        <Header/>
         {this.props.children}
-        <footer />
-
+        <Footer/>
 
       </div>
     );

@@ -1,3 +1,7 @@
 @import "tachyons";
 
 /*header styles*/
+
+body {
+  background-color: #E70000;
+}
