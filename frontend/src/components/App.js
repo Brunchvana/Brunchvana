@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import BaseLayout from './baselayout';
+import BaseLayout from './BaseLayout';
+
 
 
 
