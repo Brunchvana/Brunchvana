@@ -53,6 +53,7 @@ public class Restaurant {
     private boolean boozyBrunch;
 
     public Restaurant() {
+
     }
 
     @Id
@@ -74,7 +75,7 @@ public class Restaurant {
         this.name = name;
     }
 
-    @Column (address = "address")
+    @Column (name = "address")
     public String getAddress() {
         return address;
     }
@@ -83,7 +84,7 @@ public class Restaurant {
         this.address = address;
     }
 
-    @Column (phone = "phone")
+    @Column (name = "phone")
     public String getPhone() {
         return phone;
     }
@@ -92,7 +93,7 @@ public class Restaurant {
         this.phone = phone;
     }
 
-    @Column (url = "url")
+    @Column (name = "url")
     public String getUrl() {
         return url;
     }
@@ -100,7 +101,7 @@ public class Restaurant {
     public void setUrl(String url) {
         this.url = url;
     }
-    @Column (image = "image")
+    @Column (name = "image")
     public String getImage() {
         return image;
     }
@@ -109,7 +110,7 @@ public class Restaurant {
         this.image = image;
     }
 
-    @Column (menu = "menu")
+    @Column (name = "menu")
     public String getMenu() {
         return menu;
     }
@@ -117,7 +118,7 @@ public class Restaurant {
     public void setMenu(String menu) {
         this.menu = menu;
     }
-    @Column (zipcode = "zipCode")
+    @Column (name = "zipCode")
     public String getZipCode() {
         return zipCode;
     }
@@ -126,7 +127,7 @@ public class Restaurant {
         this.zipCode = zipCode;
     }
 
-    @Column (location = "location")
+    @Column (name = "location")
     public String getLocation() {
         return location;
     }
@@ -135,7 +136,7 @@ public class Restaurant {
         this.location = location;
     }
 
-    @Column (costFor2 = "costFor2")
+    @Column (name = "costFor2")
     public String getCostFor2() {
         return costFor2;
     }
@@ -144,7 +145,7 @@ public class Restaurant {
         this.costFor2 = costFor2;
     }
 
-    @Column (vegetarian = "vegetarian")
+    @Column (name = "vegetarian")
     public boolean isVegetarian() {
         return vegetarian;
     }
@@ -153,7 +154,7 @@ public class Restaurant {
         this.vegetarian = vegetarian;
     }
 
-    @Column ()
+    @Column (name = "kidFriendly")
     public boolean isKidFriendly() {
         return kidFriendly;
     }
@@ -162,6 +163,7 @@ public class Restaurant {
         this.kidFriendly = kidFriendly;
     }
 
+    @Column (name = "reservations")
     public boolean isReservations() {
         return reservations;
     }
@@ -170,6 +172,7 @@ public class Restaurant {
         this.reservations = reservations;
     }
 
+    @Column (name = "largeGroups")
     public boolean isLargeGroups() {
         return largeGroups;
     }
@@ -178,6 +181,7 @@ public class Restaurant {
         this.largeGroups = largeGroups;
     }
 
+    @Column (name = "outdoorSeating")
     public boolean isOutdoorSeating() {
         return outdoorSeating;
     }
@@ -186,6 +190,7 @@ public class Restaurant {
         this.outdoorSeating = outdoorSeating;
     }
 
+    @Column (name = "vegan")
     public boolean isVegan() {
         return vegan;
     }
@@ -194,6 +199,7 @@ public class Restaurant {
         this.vegan = vegan;
     }
 
+    @Column (name = "weekend")
     public boolean isWeekend() {
         return weekend;
     }
@@ -202,6 +208,7 @@ public class Restaurant {
         this.weekend = weekend;
     }
 
+    @Column (name = "weekday")
     public boolean isWeekday() {
         return weekday;
     }
@@ -210,6 +217,7 @@ public class Restaurant {
         this.weekday = weekday;
     }
 
+    @Column (name = "boozyBrunch")
     public boolean isBoozyBrunch() {
         return boozyBrunch;
     }
@@ -217,4 +225,6 @@ public class Restaurant {
     public void setBoozyBrunch(boolean boozyBrunch) {
         this.boozyBrunch = boozyBrunch;
     }
+
+
 }
