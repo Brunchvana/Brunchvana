@@ -11,7 +11,7 @@ export default class BaseLayout extends Component {
     return (
 
       <div>
-        <Header/>
+        <Header />
         {this.props.children}
         <Footer/>
 
