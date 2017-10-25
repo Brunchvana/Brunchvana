@@ -1,4 +1,4 @@
-package com.example.Brunchvana;
+package com.example.Brunchvana.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -11,7 +11,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "restaurant")
 public class Restaurant {
-
 
 
     private int id;
@@ -227,4 +226,8 @@ public class Restaurant {
     }
 
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

@@ -1,14 +1,15 @@
 package com.example.Brunchvana.Controllers;
 
-import com.example.Brunchvana.Restaurant;
+import com.example.Brunchvana.Model.Restaurant;
 import com.example.Brunchvana.Service.RestaurantService;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +19,7 @@ import java.util.List;
 
 
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
 public class RestaurantController {
 
@@ -26,36 +27,51 @@ public class RestaurantController {
 @Autowired
     RestaurantService restaurantService;
 
-    @RequestMapping(path = "/search", method = RequestMethod.GET)
 
 
-    public List<Restaurant> getRestaurant() {
-
-        List<Restaurant> searchList = new ArrayList<>();
+    @RequestMapping(path = "/search", method = RequestMethod.POST)
 
 
-        return RestaurantService.findAll();
+    public String getRestaurant(Model model) {
 
-        // store in a variable
+    List <Restaurant> restaurants = restaurantService.findAll();
 
-        // use streams to filter results by zipcode or location
+    model.addAttribute("restaurants" , restaurants );
 
-    }
+    return "restaurantList";
+
+        // Charleston filter
+      //  if () {
+      //  }
+
+            // West Ashley filter
+
+        //    else if(){
+
+       // }
+        // East Cooper / Mt.Pleasant
+       // else if(){
+
+   // }
+
+    //North Charleston
+       }
+
+
+        }
 
 
 
-    // Phase II filter via secondary booleans
+  //  @RequestMapping(path = "/filter", method = RequestMethod.POST)
 
-  //  @RequestMapping(path = "/results", method = RequestMethod.GET)
+ //  public String getRestaurant(Model model){
 
+  //      List <Restaurant> restaurantsFilter = restaurantService.findAll();
 
-    //public List<Restaurant> getRestaurant() {
+  //      model.addAttribute("restaurantsFilter" , restaurantsFilter );
 
-
-      //  return RestaurantService.findAll();
-    //}
-
-
+  //      return "restaurantFilterList";
+ //   }
 
 
-}
+//}
