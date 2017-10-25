@@ -1,6 +1,6 @@
 package com.example.Brunchvana.Service;
 
-import com.example.Brunchvana.Restaurant;
+import com.example.Brunchvana.Model.Restaurant;
 
 import java.util.List;
 
@@ -12,9 +12,11 @@ import java.util.List;
 public interface RestaurantService {
 
 
-    Restaurant add(Restaurant restaurant);
+   // Restaurant add(Restaurant restaurant);
 
     List<Restaurant> findAll();
+
+  //  List<Restaurant>  searchList = new ArrayList() ;
 
 
 }
