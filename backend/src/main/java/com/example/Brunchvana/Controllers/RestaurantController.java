@@ -16,25 +16,19 @@ import java.util.List;
  * Created by phillipdelia on 10/22/17.
  */
 
-
-
-
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
 public class RestaurantController {
 
 
-@Autowired
+    @Autowired
     RestaurantService restaurantService;
 
 
-
     @RequestMapping(path = "/search", method = RequestMethod.POST)
-
-
     public String getRestaurant(Model model) {
 
-    List <Restaurant> restaurants = restaurantService.findAll();
+    List<Restaurant> restaurants = restaurantService.findAll();
 
     model.addAttribute("restaurants" , restaurants );
 
@@ -42,6 +36,9 @@ public class RestaurantController {
 
         // Charleston filter
       //  if () {
+
+       // restaurants.stream()
+
       //  }
 
             // West Ashley filter

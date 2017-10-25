@@ -1,7 +1,5 @@
 package com.example.Brunchvana.Model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.*;
 
 /**
@@ -65,7 +63,7 @@ public class Restaurant {
         this.id = id;
     }
 
-    @Column (name = "name")
+//    @Column (name = "name")
     public String getName() {
         return name;
     }
@@ -74,7 +72,7 @@ public class Restaurant {
         this.name = name;
     }
 
-    @Column (name = "address")
+//    @Column (name = "address")
     public String getAddress() {
         return address;
     }
@@ -83,7 +81,7 @@ public class Restaurant {
         this.address = address;
     }
 
-    @Column (name = "phone")
+//    @Column (name = "phone")
     public String getPhone() {
         return phone;
     }
@@ -92,7 +90,7 @@ public class Restaurant {
         this.phone = phone;
     }
 
-    @Column (name = "url")
+//    @Column (name = "url")
     public String getUrl() {
         return url;
     }
@@ -100,7 +98,7 @@ public class Restaurant {
     public void setUrl(String url) {
         this.url = url;
     }
-    @Column (name = "image")
+//    @Column (name = "image")
     public String getImage() {
         return image;
     }
@@ -109,7 +107,7 @@ public class Restaurant {
         this.image = image;
     }
 
-    @Column (name = "menu")
+//    @Column (name = "menu")
     public String getMenu() {
         return menu;
     }
@@ -126,7 +124,7 @@ public class Restaurant {
         this.zipCode = zipCode;
     }
 
-    @Column (name = "location")
+//    @Column (name = "location")
     public String getLocation() {
         return location;
     }
@@ -144,7 +142,7 @@ public class Restaurant {
         this.costFor2 = costFor2;
     }
 
-    @Column (name = "vegetarian")
+//    @Column (name = "vegetarian")
     public boolean isVegetarian() {
         return vegetarian;
     }
@@ -162,7 +160,7 @@ public class Restaurant {
         this.kidFriendly = kidFriendly;
     }
 
-    @Column (name = "reservations")
+//    @Column (name = "reservations")
     public boolean isReservations() {
         return reservations;
     }
@@ -189,7 +187,7 @@ public class Restaurant {
         this.outdoorSeating = outdoorSeating;
     }
 
-    @Column (name = "vegan")
+//    @Column (name = "vegan")
     public boolean isVegan() {
         return vegan;
     }
@@ -198,7 +196,7 @@ public class Restaurant {
         this.vegan = vegan;
     }
 
-    @Column (name = "weekend")
+//    @Column (name = "weekend")
     public boolean isWeekend() {
         return weekend;
     }
@@ -207,7 +205,7 @@ public class Restaurant {
         this.weekend = weekend;
     }
 
-    @Column (name = "weekday")
+//    @Column (name = "weekday")
     public boolean isWeekday() {
         return weekday;
     }
