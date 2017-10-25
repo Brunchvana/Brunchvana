@@ -22,7 +22,6 @@ public class RestaurantServiceImplementation implements RestaurantService {
 
     @Override
     @Transactional(readOnly = true)
-
     public List<Restaurant> findAll() {
 
         return restaurantRepository.findAll();
