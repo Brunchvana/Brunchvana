@@ -1,5 +1,6 @@
-package com.example.Brunchvana;
+package com.example.Brunchvana.Repository;
 
+import com.example.Brunchvana.Restaurant;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
